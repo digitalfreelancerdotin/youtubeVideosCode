@@ -1,0 +1,12 @@
+function formatSheet(){
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var mySheet = ss.getSheetByName("Sheet1");
+  mySheet.getRange("A1").setBackground("Grey");
+  mySheet.getRange("B1").setFontColor("Red");
+  mySheet.getRange("C1").setFontWeight("bold");
+  mySheet.getRange("D1").setFontStyle("italic");
+  mySheet.getRange("E1").setFontFamily("Impact");
+  mySheet.getRange("F1").setFontSize(24);
+  mySheet.getRange("G1").setBorder(true, true, true, true, null, null, "red", SpreadsheetApp.BorderStyle.DOTTED);
+  mySheet.getRange("H1").setFontColor("#e0ff8e");
+}
