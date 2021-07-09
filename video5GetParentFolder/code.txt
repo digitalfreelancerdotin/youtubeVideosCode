@@ -1,0 +1,8 @@
+function getParentFolderId(){
+  ssID = SpreadsheetApp.getActive().getId();
+  var file = DriveApp.getFileById(ssID);
+  var folders = file.getParents();
+  // var parentFolderName = folders.next().getName();
+  var parentFolderId = folders.next().getId();
+  return parentFolderId;
+}
